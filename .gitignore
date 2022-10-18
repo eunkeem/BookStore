@@ -7,6 +7,7 @@
 
 # User account file
 *.properties
+src/git_BookStoreProject/properties
 
 # Log file
 *.log
@@ -32,4 +33,5 @@ hs_err_pid*
 # End of https://www.toptal.com/developers/gitignore/api/java
 /bin/
 
+imiges/
 images/
