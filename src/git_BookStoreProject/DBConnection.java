@@ -1,4 +1,4 @@
-package git_BookStoreProject;
+package bookStore;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -24,7 +24,7 @@ public class DBConnection {
 		InputStream fis;
 		try {
 			fis = new FileInputStream(
-					"C:\\Users\\USER\\java\\eclipse\\eclipse-workspace\\bookStore\\src\\chap01\\sec01\\properties");
+					"C:\\Users\\USER\\java\\eclipse\\eclipse-workspace\\git_BookStoreProject\\src\\bookStore\\properties");
 			properties.load(fis);
 		} catch (FileNotFoundException e) {
 			System.out.println("file not found." +e.getMessage());

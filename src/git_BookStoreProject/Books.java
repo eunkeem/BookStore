@@ -1,4 +1,4 @@
-package git_BookStoreProject;
+package bookStore;
 
 import java.io.Serializable;
 import java.util.Objects;
