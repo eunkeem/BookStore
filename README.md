@@ -28,7 +28,11 @@ Show the function
 |![java_inputdata](https://user-images.githubusercontent.com/115531855/196020562-7d658f73-ca37-441a-9124-574279e91667.JPG)| ⁕ input data into DB |
 |![java_showdata](https://user-images.githubusercontent.com/115531855/196020650-3074e985-6878-4b95-838d-8e1b1fbb0266.JPG) | ⁕ print data from DB |
 |![java_updatedata](https://user-images.githubusercontent.com/115531855/196020680-f38b8478-58b1-4477-9ff7-2815b1581341.JPG)| ⁕ update stock of books sold |
-|![java_deletedata](https://user-images.githubusercontent.com/115531855/196020751-d9c6e888-6d8c-43f2-b7f3-d439353ea6a4.JPG)| ⁕ delete data of DB |
+|![java_deletedata](https://user-images.githubusercontent.com/115531855/196696161-36981e08-ed5d-46ac-9d73-1724200c998f.JPG)| ⁕ delete data of DB |
+|![deleteTable](https://user-images.githubusercontent.com/115531855/196696329-84efd5d3-53dd-4f82-8138-c2db1e28fd0c.JPG)| ⁕ dleteTable using trigger |
 |![java_sort](https://user-images.githubusercontent.com/115531855/196020772-d4b94452-7f55-4c46-b298-0dcc706d0a56.JPG)| ⁕ Sort and display data |
 |![mysql_modeling](https://user-images.githubusercontent.com/115531855/196021215-59296063-aada-4fbb-8158-cff4cfac4906.JPG)| ⁕ mysql modeling |
+
+
+
 
