@@ -24,7 +24,7 @@ public class DBConnection {
 		InputStream fis;
 		try {
 			fis = new FileInputStream(
-					"C:\\Users\\USER\\java\\eclipse\\eclipse-workspace\\git_BookStoreProject\\src\\bookStore\\properties");
+					"C:\\Users\\USER\\java\\eclipse\\eclipse-workspace\\git_BookStoreProject\\src\\git_BookStoreProject\\properties");
 			properties.load(fis);
 		} catch (FileNotFoundException e) {
 			System.out.println("file not found." +e.getMessage());

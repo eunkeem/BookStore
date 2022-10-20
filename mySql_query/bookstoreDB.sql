@@ -27,11 +27,18 @@ CREATE TABLE IF NOT EXISTS `booksTBL` (
   CONSTRAINT pk_booksTBL_isbn PRIMARY KEY (`isbn`),
   CONSTRAINT fk_booksTBL_publisher FOREIGN KEY (`publisher`) REFERENCES `publisherTBL` (`name`)
   );
-insert into booksTBL values('123-45-67890-12-3', '모두의 깃&깃허브', '강민철', '길벗',20220816, 20000, 5);
-insert into booksTBL values('123-45-67890-12-0', '컴퓨터 구조', '강민철', '한빛미디어',20220716, 28000, 4);
+insert into booksTBL values('123-45-67890-12-3', '모두의깃&깃허브', '강민철', '길벗',20220816, 20000, 5);
+insert into booksTBL values('123-45-67890-12-0', '컴퓨터구조', '강민철', '한빛미디어',20220716, 28000, 4);
 insert into booksTBL values('123-45-67890-12-1', '파이썬기반금융', '이브스', '한빛미디어',20220930, 42000, 0);
 insert into booksTBL values('123-45-67890-12-2', '이것이자바다', '신용권', '한빛미디어',20220905, 36000, 7);
 insert into booksTBL values('123-45-67890-12-4', 'MySQL성능', '실비아', '위키북스',20220922, 28000, 1);
+
+-- inner join
+SELECT  B.isbn, B.title, P.name, P.phone
+	FROM booksTBL B
+	INNER JOIN publishertbl P
+    ON B.publisher = P.name
+WHERE B.stock = 0;
 
 CREATE TABLE IF NOT EXISTS `deleteBooksTBL` (
   `isbn` CHAR(20) NOT NULL,
@@ -80,3 +87,4 @@ SHOW INDEX FROM booksTBL;
      end !!
     delimiter ;
   select * from deleteBookstbl;
+  
