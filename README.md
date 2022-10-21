@@ -7,7 +7,7 @@ program for I/O database of Bookshop using java, mysql
 |program|created function|
 |---|------------------|
 |java|1️⃣input 2️⃣showData 3️⃣delete 4️⃣update 5️⃣print 6️⃣sort|
-|MySql|1️⃣creat tables 2️⃣insert data 3️⃣trigger 4️⃣procedure 5️⃣innerJoin|
+|MySql|1️⃣creat tables 2️⃣insert data 3️⃣trigger 4️⃣procedure 5️⃣innerJoin 6️⃣cascade|
 
 	
 Development Environment
