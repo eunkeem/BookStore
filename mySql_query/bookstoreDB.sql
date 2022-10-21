@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `booksTBL` (
   `price` INT NOT NULL,
   `stock` INT NOT NULL DEFAULT 0,
   CONSTRAINT pk_booksTBL_isbn PRIMARY KEY (`isbn`),
-  CONSTRAINT fk_booksTBL_publisher FOREIGN KEY (`publisher`) REFERENCES `publisherTBL` (`name`)
+  CONSTRAINT fk_booksTBL_publisher FOREIGN KEY (`publisher`) REFERENCES `publisherTBL` (`name`) ON DELETE CASCADE
   );
 insert into booksTBL values('123-45-67890-12-3', '모두의깃&깃허브', '강민철', '길벗',20220816, 20000, 5);
 insert into booksTBL values('123-45-67890-12-0', '컴퓨터구조', '강민철', '한빛미디어',20220716, 28000, 4);
