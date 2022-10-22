@@ -40,6 +40,7 @@ SELECT  B.isbn, B.title, P.name, P.phone
     ON B.publisher = P.name
 WHERE B.stock = 0;
 
+drop table if exists `deleteBooksTBL`;
 CREATE TABLE IF NOT EXISTS `deleteBooksTBL` (
   `isbn` CHAR(20) NOT NULL,
   `title` CHAR(30) NOT NULL,
@@ -49,6 +50,13 @@ CREATE TABLE IF NOT EXISTS `deleteBooksTBL` (
   `price` INT NOT NULL,
   `stock` INT NOT NULL DEFAULT 0,
   deleteDate datetime
+);
+drop table if exists `updateBooksTBL`;
+CREATE TABLE IF NOT EXISTS `updateBooksTBL` (
+  `isbn` CHAR(20) NOT NULL,
+  `title` CHAR(30) NOT NULL,
+  `stock` INT NOT NULL DEFAULT 0,
+  updateDate datetime
 );
 
 -- index 
@@ -87,4 +95,17 @@ SHOW INDEX FROM booksTBL;
      end !!
     delimiter ;
   select * from deleteBookstbl;
+  
+    describe bookstbl;
+  DROP trigger IF EXISTS trigger_updateBookstbl;
+  delimiter !!
+  CREATE trigger trigger_updateBookstbl
+		after update
+		on bookstbl
+		for each row
+ 	begin
+ 		INSERT INTO updateBooksTBL VALUES(OLD.ISBN, OLD.title, OLD.stock, now());
+     end !!
+    delimiter ;
+  select * from updateBooksTBL;
   
